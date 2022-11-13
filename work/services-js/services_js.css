@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 2rem;
+}
+
+/* css for the whole ul */
+.posts {
+    margin-right: 2rem;
+    list-style-type: none;
+}
+
+/* css for posts */
+.eachpost {
+    margin-bottom: 1rem;
+}
+
+.post_title {
+    font-size: 1.2rem;
+    color: blue;
+    text-decoration: none;
+}
+
+.post_title:hover {
+    text-decoration: underline;
+}
+
+.post_body {
+    text-overflow: ellipsis " [..]";
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* css for comments */
+.comment_content {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.eachcomment {
+    margin: 0 0 0.6rem 0;
+}
+
+.comment_info {
+    border-bottom: dashed 1px gray;
+    margin: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.comments_name, .comments_email {
+    color: grey;
+    font-size: 0.8rem;
+}
+
+.comment_body {
+    margin: 0.5rem 0 0.5rem 2rem;
+    font-size: 0.9rem;
+}

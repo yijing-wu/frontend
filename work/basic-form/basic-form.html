@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="basic-form.css"/>
+    </head>
+    <body>
+        <div id="registerform">
+            <header>
+                <nav class = "menubar">
+                    <ul class = "menu">
+                        <li><a href="homepage.html">Home Page</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="exploere.html">Sign In/ Sign Up</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="left-form">
+                <div class="left-form-content">
+                    <h2>INFORMATION</h2>
+                    <p class="left-text-1">
+                        Howl on top of tall thing lounge in doorway. Fart in owners food i is playing on your console hooman so i'm bored inside, let me out i'm lonely outside.
+                    </p>
+                    <p class="left-text-2">
+                        Where is it? i saw that bird i need to bring it home to mommy squirrel! i is playing on your console hooman so run as fast as i can into another room for no reason,
+                    </p>
+                    <div class="submit_botton">
+                        <button type="submit">Have An Account</button>
+                    </div>
+                </div>
+            </div>
+            <div class = "right-form">
+                <div class = "right-form-content">
+                    <form class="form-table" action="/urlroute/url/" method="POST">
+                        <h2>REGISTER FORM</h2>
+                        <div class="nameform">
+                            <label for="name">Name </label><br>
+                            <input type="text" name="name" id="name" required><br>
+                        </div>
+
+                        <div class="emailform">
+                            <label for="email">Email </label><br>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+
+                        <div class="tierform">
+                            <label for="tier">Tier </label><br>
+                            <select name="tier" id="tier" required>
+                                <option value="" selected disabled hidden> Please select </option>
+                                <option value="1">Silver Tier</option>
+                                <option value="2">Gold Tier</option>
+                                <option value="3">Platinum Tier</option>
+                            </select>
+                        
+                        </div>
+
+                        <div class="textareaform">
+                            <label for="otherinfo"> Other Information </label><br>
+                            <textarea id="otherinfo" name="otherinfo"></textarea>
+                        </div>
+
+                        <div class="annoy_meform">
+                            <label for="annoy_me">
+                            <input type="checkbox" name="annoy_me" id="annoy_me" value="annoy_me"> Do you want us to send you annoying emails?
+                            </label>
+                        </div>
+                        
+                        <div class="agree_itemform">
+                            <label for="aagree_item">
+                                <input type="checkbox" name="agree_item" id="agree_item" value="agree_item">
+                                I agree to the
+                                <a href="termsandconditions.html">Terms and Conditions</a>
+                        </label>
+                        </div>
+
+                        <div class="submit_botton">
+                        <button type="submit">Register</button>
+                        </div>
+                    
+                    </form>
+                </div>
+            </div>
+            <footer>
+                @2021 Yijing Wu
+            </footer>
+        </div>
+    </body>
+</html>

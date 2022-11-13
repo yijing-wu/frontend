@@ -1,0 +1,125 @@
+#registerform {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "head head"
+        "left-form right-form"
+        "footer footer";
+}
+
+header {
+    grid-area: head;
+    background-color: #a5d1fa;
+}
+
+.menubar ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.menubar a{
+    color:#3786bd;
+    font-weight:bold;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.menubar a:hover {
+    background-color: #3786bd;
+    color:white;
+    text-decoration: none;
+}
+
+.left-form {
+    grid-area: left-form;
+    background-color: #75e2e9;
+    padding: 3rem 0% 15% 25%;
+}
+
+.left-form .left-form-content {
+    background-color: #3786bd;
+    color: white;
+    height: 32rem;
+    padding: 1rem 2.5rem 3rem 2.5rem;
+}
+
+.left-form .left-form-content h2{
+    font-size: 30px;
+}
+
+.left-form .left-form-content p{
+    font-size: 15px;
+}
+
+.right-form {
+    grid-area: right-form;
+    background-color: #75e2e9;
+    padding: 3rem 25% 15% 0%;
+}
+
+.right-form-content {
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    height: 32rem;
+    padding: 1rem 0rem 3rem 2.5rem;
+}
+
+.right-form .form-table h2 {
+    font-size: 30px;
+}
+
+.right-form .form-table p {
+    margin-top: 0.1rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.right-form .form-table div {
+    padding-bottom: 1rem;
+}
+
+.right-form .form-table .nameform input:required{
+    border-color: red;
+}
+
+.right-form .form-table .nameform #name {
+    width: 76%;
+    height: 1.2rem;
+    margin-top: 0.3rem;
+}
+
+.right-form .form-table .emailform input:required{
+    border-color:red;
+}
+
+.right-form .form-table .emailform #email {
+    width: 76%;
+    height: 1.2rem;
+    margin-top: 0.3rem;
+}
+
+.right-form .form-table .tierform #tier {
+    width: 78%;
+    height: 1.8rem;
+    margin-top: 0.3rem;
+}
+
+.tierform select:required{
+    border-color: red;
+}
+
+.right-form .form-table .textareaform #otherinfo {
+    width: 76%;
+    height: 4rem;
+    margin-top: 0.3rem;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #a5d1fa;
+    padding: 0.5rem;
+    color:darkolivegreen;
+}
